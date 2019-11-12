@@ -1,1 +1,6 @@
 gunicorn
+Flask
+requests
+os
+traceback
+json
