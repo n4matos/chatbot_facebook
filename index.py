@@ -86,6 +86,7 @@ def webhook():
 
         except Exception as e:
             print(traceback.format_exc())
+            
     elif request.method == 'GET': # Para a verificação inicial
         if request.args.get('hub.verify_token') == os.environ.get('FB_VERIFY_TOKEN'):
             return request.args.get('hub.challenge')
